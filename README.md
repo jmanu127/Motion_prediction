@@ -1,5 +1,5 @@
 # roadwayreco
-OMSCS CS7643 Spring 2021 Capstone Project
+Spring 2021 Capstone Project
 
 ## Evaluation Metrics
 [Waymo Challenge Doc](https://waymo.com/open/challenges/2021/motion-prediction/)
