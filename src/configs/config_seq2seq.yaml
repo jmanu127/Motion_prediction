@@ -1,0 +1,19 @@
+Train:
+  batch_size: 128
+  epochs: 1
+
+  learning_rate: 0.001
+
+network:
+  model_type: Seq2Seq   #SimpleModel,Seq2Seq
+
+data:
+  path: "/content/data/training"   # TODO: update your training data path here
+  basename: "training_tfexample"
+  n_take: 500     # TODO: if 0, all sessions will be used. Only use 0 for final training
+
+tensor_board:
+  log_dir: "./data/tensor_board/seq2seq_test"    # TODO: update your tensor board data path
+
+loss:
+  loss_type: MSE

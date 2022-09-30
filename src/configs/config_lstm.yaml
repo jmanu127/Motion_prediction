@@ -1,0 +1,24 @@
+Train:
+  batch_size: 32
+  epochs: 10
+
+  learning_rate: 0.001
+
+network:
+  model_type: lstm    #SimpleModel
+
+data:
+  train_path: "/home/x/data/train"
+  train_basename: "training_tfexample"
+  val_path: "/home/x/data/val"
+  val_basename: "validation_tfexample"
+  n_take: 100    # if 0, all sessions will be used. Only use 0 for final training
+  use_map_features: False
+
+  save_best: True
+
+tensor_board:
+  log_dir: "./data/tensor_board/lstm_mse"    # TODO: update your tensor board data path
+
+loss:
+  loss_type: MSE
